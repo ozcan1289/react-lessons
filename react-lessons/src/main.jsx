@@ -9,15 +9,19 @@ const myElement = (
 
 );
 
-class Car {
-  constructor(name) {
-    this.brand = name;
-  }
-  
-  present() {
-    return 'I have a ' + this.brand;
-  }
-}
+createRoot(document.getElementById('root')).render(
+  myElement
+);
 
-const mycar = new Car("Ford");
-console.log(mycar.present());
+//class Car {
+//  constructor(name) {
+//    this.brand = name;
+//  }
+//  
+//  present() {
+//    return 'I have a ' + this.brand;
+//  }
+//}
+
+//const mycar = new Car("Ford");
+//console.log(mycar.present());
